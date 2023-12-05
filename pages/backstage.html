@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台系統</title>
+    <style>
+        @import"../assets/css/backstage.css";
+   </style>
+</head>
+<body>
+    <nav>
+        <a href="cart.html"><img src="../assets/images/cart.png" class="cart"></a>
+        <a href="member.html"><img src="../assets/images/teamwork.png" class="teamwork"></a>
+        <div>
+            <img src="../assets/images/search.png" class="search">
+            <input type="search" placeholder="請輸入關鍵字" style="height: 40px;" class="search-txt">
+        </div>
+        <a href="back.html" class="back">後台登入</a>
+        <a href="login.html" class="member">登入註冊</a>
+        <a href="aboutus.html" class="about">關於我們</a>
+        <a href="allproduct.html" class="product">商品總覽</a>
+        <a href="index.html">
+        <div class="title">
+            <span style="animation-delay: 0s;">整</span>
+            <span style="animation-delay: 0.2s;">人</span>
+            <span style="animation-delay: 0.4s;">專</span>
+            <span style="animation-delay: 0.6s;">家</span>
+        </div>
+        </a>
+    </nav>
+    <section>
+        <div class="tit">
+            <h1 class="sale-glowIn">
+            <span style="animation-delay: 0s">後</span>
+            <span style="animation-delay: 0.3s">台</span>
+            <span style="animation-delay: 0.6s">系</span>
+            <span style="animation-delay: 0.9s">統</span>
+            </h1>
+        </div>
+        <div class="button">
+            <input type="submit" value="新增商品" onclick="submit()" id="additem">
+            <input type="submit" value="修改商品" onclick="submit()" id="reviseitem">
+            <input type="submit" value="刪除商品" onclick="submit()" id="deleteitem">
+            <input type="submit" value="訂單管理" onclick="submit()" id="orderdata">
+            <input type="submit" value="會員資料管理" onclick="submit()" id="memberdata">
+        </div>
+    </section>
+</body>
+</html>
