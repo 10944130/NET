@@ -1,0 +1,215 @@
+body{
+    background-image: url(../images/bg2.jpg);
+    background-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+a:link{color:#6c5d4e;} 
+a:visited {color:#013f51;}
+nav{
+    background-color: #b3a18c;
+    overflow: auto;
+}
+element.style {
+    animation-delay: 0s;
+}
+.title span {
+    animation: bounce 0.4s ease infinite alternate;
+}
+@keyframes bounce{
+    100%{
+        transform: translateY(-20px);
+    }
+    
+} 
+.title{
+   display: flex;
+   /*float: left;*/
+   font-family: 'Noto Sans TC',sans-serif !important;
+   margin-left: 25px;
+   letter-spacing: 15px;
+   color: #824513;
+   font-size: 3em;
+   text-shadow: rgba(245, 242, 242, 0.789) 0px 3px 8px;
+   /*padding: -100px;*/
+}
+.search,.teamwork{
+    float: right;
+    width: 48px;
+    height: 50px;
+    margin-left: 25px;
+    padding: 5px;
+}
+.search-txt{
+    background-color:#D5C2B3;
+    float: right;
+    margin-top:17px;
+    display: flex;
+    border: 0px #b3a18c;
+    border-radius: 10px;
+}
+.cart{
+    float: right;
+    width: 55px;
+    height: 58px;
+    margin-left: 25px;
+    padding: 5px;
+}
+.product,.about,.member,.back{
+    float:right;
+    font-size: 25px;
+    margin-left: 25px;
+    padding: 20px;
+}
+/*上面是nav*/
+.sale-glowIn span {
+    animation: glow-in 1.0s both;
+    animation-iteration-count : infinite;
+}
+.sale-glowIn{
+    text-align: center;
+    line-height: 1.8;
+    font-family: Lora, serif;
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #824513
+}
+@keyframes glow-in{
+    0% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+        text-shadow: 0 0 25px white;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+.loginall{
+    width:100%;
+    margin:auto;
+    max-width:600px;
+    min-height:800px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    top: -100px;
+    justify-content: center;
+}
+.loginall-login .loginall-signinform,
+.loginall-login .loginall-signupform{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 0.4s linear;
+}
+.loginall-login .signin,
+.loginall-login .signup{
+    display: none;
+}
+.loginall-login .tab{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin:0 20px 10px 0;
+    display:inline-block;
+    border-bottom:2px solid transparent;
+}
+.loginall-login .signin:checked + .tab,
+.loginall-login .signup:checked + .tab {
+    color: #824513;
+    border-color: rgb(228, 96, 8);
+}
+.loginall-loginform {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.loginall-loginform .loginall-group {
+    margin-bottom: 15px;
+}
+.loginall-loginform .loginall-group .label,
+.loginall-loginform .loginall-group .input,
+.loginall-loginform .loginall-group .button {
+    outline:none;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.loginall-loginform .loginall-group .input,
+.loginall-loginform .loginall-group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background:#fff;
+}
+.loginall-loginform .loginall-group a{
+    text-decoration:none;
+}
+.loginall-loginform .loginall-group input[data-type="password"] {
+    text-security:circle;
+}
+.loginall-loginform .loginall-group input[type="checkbox"] {
+    margin: 5% 3%;
+}
+.font{
+    color:#824513;
+    font-size: 20px;
+    font-weight: bold;
+}
+.loginall-loginform .loginall-group .label {
+    color: #824513;
+    font-size: 20px;
+    font-weight: bolder;
+    margin:5px;
+    
+}
+.loginall-loginform .loginall-group .input {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    width:560px;
+}
+.loginall-loginform .loginall-group .button {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 6%;
+    background-color: #8e6d52;
+    color:#fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+label {
+    color: #824513;
+}
+.loginall-login .signin:checked + .tab + .signup + .tab + .loginall-loginform .loginall-signinform {
+    transform: rotate(0);
+}
+
+.loginall-login .signup:checked + .tab + .loginall-loginform .loginall-signupform {
+    transform: rotate(0);
+}
+.loginall-loginform .loginall-group .button:hover{
+    background-color: rgb(234, 210, 145);
+    color: #8e6d52;
+}
+
+.loginall-loginform .loginall-group .button:active{
+    background: #ee6911;
+    transform: translateY(6px);
+}
